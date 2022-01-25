@@ -3,18 +3,18 @@
 This project is part of the IBM Full Stack Cloud Developer Professional Certificate final capstone project.
 
 The final project for this course has several steps that must be completed.
-To give you an overview of the whole project, all the high-level steps are listed below. 
+To give an overview of the whole project, all the high-level steps are listed below. 
 The project is then divided into several smaller labs that give the detailed instructions for each step. 
 You must complete all the labs to successfully complete the project.
 
 ## Project Breakdown
 
 **Prework: Sign up for IBM Cloud account and create a Watson Natural language Understanding service**
-1. Create an IBM cloud account if you don't have one already.
+1. Create an IBM cloud account.
 2. Create an instance of the Natural Language Understanding (NLU) service.
 
 **Fork the project Github repository with a project then build and deploy the template project**
-1. Fork the repository in your account
+1. Fork the repository in GitHub account
 2. Clone the repository in the theia lab environment
 3. Create static pages to finish the user stories
 4. Deploy the application on IBM Cloud
@@ -34,5 +34,5 @@ You must complete all the labs to successfully complete the project.
 3. Create a page that let's the end user add a review for a selected dealer
 
 **Containerize your application**
-1. Add deployment artifacts to your application
-2. Deploy your application
+1. Add deployment artifacts to the application
+2. Deploy the application
