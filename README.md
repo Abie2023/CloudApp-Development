@@ -1,6 +1,8 @@
-# Final Project Template
+# Full Stack Cloud Application Development Capstone Project
 
-The final project for this course has several steps that you must complete. 
+This project is part of the IBM Full Stack Cloud Developer Professional Certificate final capstone project.
+
+The final project for this course has several steps that must be completed.
 To give you an overview of the whole project, all the high-level steps are listed below. 
 The project is then divided into several smaller labs that give the detailed instructions for each step. 
 You must complete all the labs to successfully complete the project.
