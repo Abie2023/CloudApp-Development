@@ -13,6 +13,7 @@ class CarMake(models.Model):
         return "Name: " + self.name + "," + \
                "Description: " + self.description
 
+
 # Car Model model
 class CarModel(models.Model):
     car_make = models.ForeignKey(CarMake, on_delete=models.CASCADE)
@@ -23,12 +24,44 @@ class CarModel(models.Model):
 
     def __str__(self):
         return "Name: " + self.name + "," + \
-               "Make: " + self.car_make + "," + \
                "Dealer: " + self.dealer_id + "," + \
-               "Type: " + self.type + "," + \
-               "Year: " + self.year
-
-# <HINT> Create a plain Python class `CarDealer` to hold dealer data
+               "Type: " + self.type
 
 
-# <HINT> Create a plain Python class `DealerReview` to hold review data
+# Python class `CarDealer` to hold dealer data
+class CarDealer:
+
+    def __init__(self, id, short_name, full_name, address, city, state, st, zip, lat, long):
+        self.id = id
+        self.short_name = short_name
+        self.full_name = full_name
+        self.address = address
+        self.city = city
+        self.state = state
+        self.st = st
+        self.zip = zip
+        self.lat = lat
+        self.long = long
+
+    def __str__(self):
+        return "Dealer Name: " + self.full_name
+
+
+# Python class `DealerReview` to hold review data
+class DealerReview:
+
+    def __init__(self, id, name, dealership, review, purchase, purchase_date, car_make, car_model, car_year, sentiment=0):
+        self.id = id
+        self.name = name
+        self.dealership = dealership
+        self.review = review
+        self.purchase = purchase
+        self.purchase_date = purchase_date
+        self.car_make = car_make
+        self.car_model = car_model
+        self.car_year = car_year
+        self.sentiment = sentiment
+
+    def __str__(self):
+        return "Name: " + self.name + "," + \
+               "Review: " + self.review
